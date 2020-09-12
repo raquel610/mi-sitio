@@ -1,25 +1,136 @@
- *{
-     
-    
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#p1 {
-   
-  font-family:cursive;
-  font-size: 20px;
-  color:#000000,
-
-
-
-  }
-
-
+body{
  
-h2{
-    margin-bottom: 30px;
-   
-    text-align: center;
-    background-color:	#c4faf8;
+font-family: ´open sans´;
+
+}
+.contenedor{
+  padding:60px 0;
+  width:90%;
+  max-width:1000px;
+  margin: auto;
+  overflow: hidden;
+
+
+
+}
+a{
+	color:#000000;
+    text-decoration: none;
+
+}
+a:hover{
+
+    color: green;
+    background:#b5b9ff;
+
+
+    }
+  .blacklink:hover{
+  	color: blue;
+  	background:#C4FAF8;
   
 
-  }
+}
+
+/* Header */
+header {
+
+
+
+background-size:cover;
+background-attachment:fixed;
+position:relative;
+
+}
+nav{
+  text-align:right;
+  padding:30px 50px 0 0;
+}
+nav > a{
+  color:#000000 ;
+  font-weight: 300;
+  text-decoration:none;
+  margin-right:10px;
+}
+nav > a:hover{
+  text-decoration: underline;
+}
+
+
+header .textos-header{
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.textos-header h1{
+  font-size: 40px;
+  color:#000000 ;
+
+}
+
+
+/* Galeria*/
+.portafolio{
+	background:#f2f2f2
+}
+
+.galeria-port{
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap:wrap;
+}
+.imagen-port{
+	width:24%;
+	margin-bottom:10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+
+}
+.imagen-port > img{
+	width: 30%;
+	height:20%;
+	object-fit:cover;
+	display:block;
+
+}
+.contenido-tex h3 span{
+
+background:#4d0686;
+color:#ffff;
+border-radius:50%;
+display:inline-block;
+text-align:center;
+width:30px;
+height: 30px;
+padding: 2px;
+box-shadow: 0 0 60px 0 rgba(0,0,0, .5);
+margin-right: 5px;
+
+}
+
+.contenido-tex p {
+  padding:0px 0px 30px 15px;
+  font-weight:300;
+  text-align:justify;
+
+
+}
+
+.final{
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+    color: #9e9797;
+    
+}

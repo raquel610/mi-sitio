@@ -1,0 +1,181 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ 
+font-family: ´open sans´;
+
+}
+.contenedor{
+  padding:60px 0;
+  width:90%;
+  max-width:1000px;
+  margin: auto;
+  overflow: hidden;
+  
+
+}
+a{
+	color:#000000;
+    text-decoration: none;
+
+}
+a:hover{
+
+    color: green;
+    background:#b5b9ff;
+
+
+    }
+  .blacklink:hover{
+  	color: blue;
+  	background:#C4FAF8;
+  
+
+}
+
+
+/* Header */
+header {
+
+
+
+background-size:cover;
+background-attachment:fixed;
+position:relative;
+
+}
+nav{
+  text-align:right;
+  padding:30px 50px 0 0;
+}
+nav > a{
+  color:#000000 ;
+  font-weight: 300;
+  text-decoration:none;
+  margin-right:10px;
+}
+nav > a:hover{
+  text-decoration: underline;
+}
+
+
+header .textos-header{
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.textos-header h1{
+  font-size: 40px;
+  color:#000000 ;
+
+}
+
+/* clients */
+.cards{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.cards .card{
+	background:#4d0686;
+	display:flex;
+	width:46%;
+	height: 200px;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0, .6);
+}
+.cards .card img{
+	width:100px;
+	height:100px;
+	object-fit:cover;
+	border-radius: 50%;
+	display:block;
+}
+.cards .card > .con-tex {
+	width:60%;
+	color:#ffff;
+}
+.cards .card > .con-tex p{
+	font-weight:300;
+	padding-top:5px;
+}
+/* our team*/
+
+.about-services{
+	background:#f2f2f2;
+	padding-bottom:30px;
+}
+
+.servicio-cont{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.servicio{
+	width: 28%;
+	text-align:center;
+}
+.servicio img{
+	width: 90%;
+	
+}
+.servicio h3{
+	width: 10% 0;
+	
+}
+.servicio p{
+	width: 300;
+	text-align: justify;
+	
+}
+
+/* footer */
+
+footer{
+	background:#414141;
+	padding:60px 0 30px 0;
+	margin:auto;
+	overflow: hidden;
+}
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.content-foo h4{
+	color:#fff;
+	border-bottom: 3px solid #af20d3;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+
+
+.content-foo p{
+    color: #ccc;
+
+}
+
+
+.final{
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+    color: #9e9797;
+    
+}

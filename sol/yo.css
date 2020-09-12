@@ -1,166 +1,156 @@
- body
-{
+*{
+
     margin: 0;
     padding: 0;
-
-
+    box-sizing: border-box;
 }
 
-
-.wave
-{
-  position: relative;
-  background: linear-gradient(#AFCBFF,#C4FAF8,#C4FAF8);
-
-
-}
-
-#highlight {
-  
-    font-size:24px;
-    font-weight: bold;
-    font-color:black;
-    font-style: normal;
-    float: left;
-    padding: 10px 30px 10px 30px;
-}
-#highlight2 {
-    
-
-    font-size:24px;
-    font-weight: bold;
-    font-color:black;
-    font-style: normal;
-    float: right;
-    padding: 10px 30px 10px 30px;
-}
-#highlight3 {
-     
-
-   
-    font-size:24px;
-    font-weight: bold;
-    font-color:black;
-    font-style: normal;
-    float: right;
-    padding: 10px 30px 10px 30px;
-}
-
+body{
  
+font-family: ´open sans´;
 
-#p1 {
-    padding: 60px 20px 10px 20px;
+}
+.contenedor{
+  padding:60px 0;
+  width:90%;
+  max-width:1000px;
+  margin: auto;
+  overflow: hidden;
 
-    font-size:18px;
-
-    color:black;
-   font-family:cursive;
-    font-style: italic;
   }
 
-#p2 {
-     padding: 60px 20px 10px 20px;
-  
-    font-size:18px;
 
-    color:black;
-    font-family:cursive;
-    font-style: italic;
+a{
+  color:#000000;
+    text-decoration: none;
+
+}
+a:hover{
+
+    color: green;
+    background:#b5b9ff;
+
+
     }
+  .blacklink:hover{
+    color: blue;
+    background:#C4FAF8;
+  
 
-/* RESPONSIVE WORK DEVICE */
-
-.fili {
-  width: 100%;
 }
-@media (min-width:992px)
+
+
+
+
+.titulo{
+  
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #642a73;
+
+}
+
+/* Header */
+header {
+  width:100%;
+  height:500px;
+  background: #bc4e9c; 
+   /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f807594f, #bc4e9c47);
+  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f807594f, #bc4e9c47), url(https://i.pinimg.com/564x/96/86/36/9686362c42635492c6763f721e4da4bb.jpg);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-size:cover;
+background-attachment:fixed;
+position:relative;
+
+}
+nav{
+  text-align:right;
+  padding:30px 50px 0 0;
+}
+nav > a{
+  color:#ffff;
+  font-weight: 300;
+  text-decoration:none;
+  margin-right:10px;
+}
+nav > a:hover{
+  text-decoration: underline;
+}
+
+
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.textos-header h1{
+  font-size: 50px;
+  color:#ffff;
+
+}
+
+.textos-header h2{
+  font-size: 25px;
+  color:#ffff;
+
+}
+.wave
 {
-.col1, .col2, .col3, .col4, .col5, .col6,.col7, .col8, .col9,.col10, .col11, .col12 {
-  float: left; 
-} 
-.col1{
-  width: 8.33%;
-}
-.col2{
-  width: 16.66%;
-}
-.col3{
-  width: 25%;
-}
-.col4{
-  width: 33.33%;
-}
-.col5{
-  width: 41.66%;
-}
-.col6{
-  width: 50%;
-}
-.col7{
-  width: 58.33%;
-}
-.col8{
-  width: 66.66%;
-}
-.col9{
-  width: 74.99%;
-}
-.col10{
-  width: 83.33%;
-}
-.col11{
-  width: 91.66%;
-}
-.col12{
+  position: absolute;
+  bottom: 0;
   width: 100%;
-}
-       
-}
-@media (min-width:768px) and (max-width:991px)
-{
-.coli1, .coli2, .coli3, .coli4, .coli5, .coli6,.coli7, .coli8, .coli9,.coli10, .coli11, .coli12 {
-  float: left; 
-} 
-.coli1{
-  width: 33.33%;
-}
-.coli2{
-  width: 33.33%;
-}
-.coli3{
-  width: 33.33%;
-}
-.coli4{
-  width: 33.33%;
-}
-.coli5{
-  width: 41.66%;
-}
-.coli6{
-  width: 50%;
-}
-.coli7{
-  width: 58.33%;
-}
-.coli8{
-  width: 66.66%;
-}
-.coli9{
-  width: 74.99%;
-}
-.coli10{
-  width: 83.33%;
-}
-.coli11{
-  width: 91.66%;
-}
-.coli12{
-  width: 100%;
-}
-        
 
-#cosita{
-     position: relative;
 }
-         
+/*about us*/
+.contenedor-sobre-nosotros{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagen-about-us{
+  width: 48%;
+}
+.sobre-nosotros .contenido-textos{
+  width: 48%;
+}
+.contenido-textos h3{
+  margin-bottom:15px;
+}
+
+
+.contenido-tex h3 span{
+
+background:#4d0686;
+color:#ffff;
+border-radius:50%;
+display:inline-block;
+text-align:center;
+width:30px;
+height: 30px;
+padding: 2px;
+box-shadow: 0 0 60px 0 rgba(0,0,0, .5);
+margin-right: 5px;
+
+}
+
+.contenido-tex p {
+  padding:0px 0px 30px 15px;
+  font-weight:300;
+  text-align:justify;
+}
+
+.final{
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+    color: #9e9797;
+    
 }
